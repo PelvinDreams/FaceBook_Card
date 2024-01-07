@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <style>
+    body {
+        background-color: rgb(230, 230, 230);
+        margin:0;
+        padding:0;
+        font-family: sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .Body-Back{
+        background-color: white;
+        margin: 30px;
+        width: 50%;
+        padding: 15px;
+        box-shadow: 1px 1px 2px 2px #c5c1c1;
+  
+    }
+    .center {
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        margin:10px auto 0;
+        padding: 10px;
+        max-width: 400px;
+    }
+
+    #head {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .text {
+        color: hsl(0, 0%, 70%);
+        font-weight:bold;
+        margin:0;
+    }
+
+    #bodySec {
+        outline: 2px solid hsl(0, 0%, 70%);
+        background-color: hsl(0, 0%, 100%);
+        padding-top:45px;
+        margin-top: 10px;
+        border-top-left-radius:50px;
+        border-top-right-radius:50px;  
+    }
+
+    .inner {
+        width: 90%;
+        background-color: hsl(0, 0%, 70%);
+        margin: 0 auto;
+        height:180px;
+    }
+
+        
+    .inner h3{
+        background-color: hsl(240, 100%, 50%);
+        color: hsl(0, 0%, 100%);
+        padding: 10px;
+        text-align: center;
+        margin: 0 0 10px;  
+    }
+
+    .inner article {
+        background-color: hsl(0, 0%, 100%);
+        width: 90%;
+        height: 30%;
+        margin: 0 auto;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+    
+    }
+
+    article img {
+      width: 15%;
+      margin-right: 15px;
+    }
+    form {
+        display:flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    
+    }
+        
+    .btn {
+        padding: 10px;
+        width: 30%;
+        font-weight:bold;
+        cursor: pointer;
+    }
+
+
+    #btn1 {
+        background-color: hsl(0, 0%, 100%);
+        color: hsl(0, 0%, 50%);
+        border: 2px solid hsl(0, 0%, 70%);
+        border-radius: 5px;  
+    }
+
+    #btn2 {
+        background-color: hsl(240, 100%, 50%);
+        color: hsl(0, 0%, 100%);
+        border: 2px solid hsl(0, 0%, 100%);
+        border-radius: 5px;  
+    }
+  </style>
+</head>
+
+<body>
+
+ 
+   <section class="Body-Back">
+      <div class="center">
+        <div id="head">
+        <h3>Welcome to facebook.</h3>
+        <p class="text">I-save ang impormasyon sa pag-log in? Sa susunod na mag-log in ka sa device na ito. I-tap lang ang iyong account sa halip na mag-type ng password.</p>
+        </div>
+        
+        <main id="bodySec">
+    <div class="inner">
+        <h3>facebook</h3>
+        <article>
+        <img src="Profile.jpg" alt="">
+        <p><strong>Poola vota</strong></p>
+        </article>
+    </div>
+        </main>
+   
+        <form action="#">
+            <button id="btn1" class="btn">Not Now</button>
+            <button id="btn2" class="btn">OK</button>
+        </form>
+    
+    </div>
+   </section>
+
+
+   <script>
+    document.getElementById("btn1").addEventListener("click", function() {
+      alert(" you Cancelled");
+    });
+
+    document.getElementById("btn2").addEventListener("click", function() {
+      alert("Successfully Logged in");
+    });
+  </script>
+</body>
+</html>
